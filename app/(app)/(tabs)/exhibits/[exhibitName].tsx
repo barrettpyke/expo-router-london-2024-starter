@@ -1,4 +1,4 @@
-import { View, FlatList } from "react-native";
+import { FlatList, View } from "react-native";
 import { Stack, useLocalSearchParams } from "expo-router";
 import { useWorksForExhibitQuery } from "@/data/hooks/useWorksForDepartmentQuery";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
@@ -18,6 +18,7 @@ export default function ExhibitScreen() {
       <Stack.Screen
         options={{
           title: exhibitName,
+          headerShown: false,
         }}
       />
       <FlatList
