@@ -1,4 +1,4 @@
-import { View, Text, FlatList } from "react-native";
+import { FlatList, Text, View } from "react-native";
 import { useRandomWorksQuery } from "@/data/hooks/useRandomWorksQuery";
 import { useMediaQuery } from "@/constants/useMediaQuery";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
